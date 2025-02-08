@@ -4,7 +4,7 @@ metadata:
   name: my-webhook
   namespace: flux-system
 spec:
-  type: webhook
+  type: generic
   address: http://flux-webhook-service.default.svc.cluster.local/webhook
   secretRef:
     name: webhook-secret
