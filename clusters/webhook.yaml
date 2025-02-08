@@ -1,0 +1,10 @@
+apiVersion: notification.toolkit.fluxcd.io/v1beta2
+kind: Provider
+metadata:
+  name: my-webhook
+  namespace: flux-system
+spec:
+  type: webhook
+  address: http://flux-webhook-service.default.svc.cluster.local/webhook
+  secretRef:
+    name: webhook-secret
