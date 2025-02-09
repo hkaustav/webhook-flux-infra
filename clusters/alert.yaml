@@ -10,3 +10,4 @@ spec:
   eventSources:
     - kind: ImagePolicy
       name: simple-python-web-app-policy
+      namespace: flux-system
