@@ -5,9 +5,9 @@ metadata:
   namespace: flux-system
 spec:
   providerRef:
-    name: my-webhook
+    name: app-webhook
   eventSeverity: info
   eventSources:
     - kind: ImagePolicy
-      name: simple-python-web-app-policy
+      name: webhook-app-policy
       namespace: flux-system
